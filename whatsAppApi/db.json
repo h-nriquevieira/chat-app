@@ -1,0 +1,38 @@
+{
+  "contato": [
+    {
+      "id": 1,
+      "imagemUrl": "https://images.generated.photos/3m_U6OpnJvpM8HUrtmpIuH113nnU6QNDMnNGkVq9VkM/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA5NDI4MDQuanBn.jpg",
+      "nome": "Tio Claudio"
+    },
+    {
+      "id": 2,
+      "imagemUrl": "https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg",
+      "nome": "Katia"
+    }
+  ],
+  "mensagem": [
+    {
+      "id": 1,
+      "contatoId": 1,
+      "enviadoPeloContato": true,
+      "conteudo": "Olá este vídeo que Manoel do bar me mandou.",
+      "datahora": "2021-03-29T13:55:52.480Z"
+    },
+    {
+      "id": 2,
+      "contatoId": 2,
+      "enviadoPeloContato": true,
+      "conteudo": "Bom dia!",
+      "datahora": "2021-03-29T17:55:52.480Z"
+    }
+    ,
+    {
+      "id": 3,
+      "contatoId": 2,
+      "enviadoPeloContato": false,
+      "conteudo": "Boa tarde na verdade! rsrsrs",
+      "datahora": "2021-03-29T17:59:52.480Z"
+    }
+  ]
+}
