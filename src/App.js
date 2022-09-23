@@ -1,9 +1,9 @@
 import './App.css';
-import { getContacts } from './services/apiServices';
+import { getContacts, getMessages } from './services/apiServices';
 
 function App() {
 
-  getContacts()
+  getMessages()
 
   return (
     <div className="App">
