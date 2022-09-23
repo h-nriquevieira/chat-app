@@ -2,21 +2,16 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import chatContextBuilder from './services/Chat/chatContextBuilder';
 import ChatContext from './services/Chat/ChatContext'
+import ContactsPage from './pages/ContactsPage/ContactsPage';
 
 function App() {
   const chatContext = chatContextBuilder(useState({ contacts: [], messages: [] }))
 
-  const [update, setUpdate] = useState(0)
-
-  useEffect(() => {
-    chatContext.getContacts()
-    chatContext.getMessages()
-  }, [update])
-
-
   return (
     <ChatContext.Provider value={chatContext}>
-      App
+      <ContactsPage>
+
+      </ContactsPage>
     </ChatContext.Provider>
   );
 }
