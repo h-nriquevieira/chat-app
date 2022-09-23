@@ -1,13 +1,23 @@
+import { useEffect, useState } from 'react';
 import './App.css';
-import { getContacts, getMessages } from './services/Chat/chatContextBuilder';
+import chatContextBuilder from './services/Chat/chatContextBuilder';
+import ChatContext from './services/Chat/ChatContext'
 
 function App() {
+  const chatContext = chatContextBuilder(useState({ contacts: [], messages: [] }))
+
+  useEffect(() => {
+    chatContext.getContacts()
+    chatContext.getMessages()
+  },[])
 
 
   return (
-    <div className="App">
-      App
-    </div>
+    <ChatContext.Provider value={chatContext}>
+      <div className="App">
+        <button onClick={() => console.log(chatContext.chatData)}>Log</button>
+      </div>
+    </ChatContext.Provider>
   );
 }
 
