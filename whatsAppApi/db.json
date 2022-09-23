@@ -25,8 +25,7 @@
       "enviadoPeloContato": true,
       "conteudo": "Bom dia!",
       "datahora": "2021-03-29T17:55:52.480Z"
-    }
-    ,
+    },
     {
       "id": 3,
       "contatoId": 2,
